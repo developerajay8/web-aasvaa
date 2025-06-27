@@ -15,8 +15,11 @@ export default function Herosection() {
           {/* Main Content */}
           <div className="relative z-10 flex flex-col items-center justify-center min-h-[88vh] px-4 text-center">
             {/* Desktop Layout */}
-            <div className="hidden md:block text-center py-[113px]">
-              <h1 className="text-6xl lg:text-[60px] font-semibold  mb-5 leading-tight">
+            <div className="hidden md:block text-center py-[70px]">
+              <div className="mb-5 w-fit mx-auto">
+                <img src="/images/remove black text copy 1 (2).png" alt=""/>
+              </div>
+              <h1 className="text-6xl lg:text-[60px] font-semibold  mb-4 leading-tight">
                 <span className="text-[#FFFF00]">AI</span>{" "}
                 <span className="text-white">That Works.</span>
                 <br />
@@ -24,12 +27,12 @@ export default function Herosection() {
                 <span className="text-white">That Leads.</span>
               </h1>
 
-              <p className="text-gray-300 text-lg mb-12 max-w-[500px] mx-auto leading-relaxed">
+              <p className="text-gray-300 text-lg mb-6 max-w-[500px] mx-auto leading-relaxed">
                 From legal intelligence to cultural preservation — we &lsquo; re
-                building Bharat &lsquo; s very own Gen AI ecosystem.
+                building <span className="text-[#ffff00]">Bharat</span> &lsquo; s very own Gen AI ecosystem.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
                 <button className="rounded-[10px] w-fit text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
                   Join the Movement
                 </button>
@@ -47,7 +50,10 @@ export default function Herosection() {
 
             {/* Mobile Layout */}
             <div className="block md:hidden sm:max-w-sm mx-auto">
-              <h1 className="text-[44px] font-bold mb-6 leading-tight">
+              <div className="mb-4 w-fit mx-auto">
+                <img src="/images/remove black text copy 1 (2).png" alt=""/>
+              </div>
+              <h1 className="text-[44px] font-bold mb-5 leading-tight">
                 <span className="text-[#FFFF00]">AI</span>{" "}
                 <span className="text-white">That</span>{" "}
                 <span className="text-white">Works.</span>
@@ -56,12 +62,12 @@ export default function Herosection() {
                 <span className="text-white">That Leads.</span>
               </h1>
 
-              <p className="text-gray-300 text-base mb-8 leading-relaxed">
+              <p className="text-gray-300 text-base mb-6 leading-relaxed">
                 From legal intelligence to cultural preservation — we&lsquo; re
-                building Bharat &lsquo; s very own Gen AI ecosystem.
+                building <span className="text-[#ffff00]">Bharat</span>  &lsquo; s very own Gen AI ecosystem.
               </p>
 
-              <div className="flex flex-col gap-4 mb-12">
+              <div className="flex flex-col gap-4 mb-10">
                 <button className="rounded-[10px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
                   Join the Movement
                 </button> 

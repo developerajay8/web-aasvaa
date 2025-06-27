@@ -1,5 +1,7 @@
 "use client";
 import { useState } from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 
 export default function TeamSection() {
   const [isFlipped1, setIsFlipped1] = useState(false);
@@ -18,18 +20,23 @@ export default function TeamSection() {
         <div className="absolute w-full h-full rounded-xl overflow-hidden [backface-visibility:hidden]">
           <img src={imgSrc} alt={name} className="w-full h-full object-cover" />
           <div className="absolute bottom-4 left-4">
+            <div className="flex items-center gap-10 justify-between">
             <div>
               <h3 className="text-[23px] text-[#FFFF00] font-bold">{name}</h3>
               <p className="text-[#F6F6F6] text-[16px]">{role}</p>
             </div>
-            <div className="bg-[#ffff00] rounded-full w-8 h-8 flex items-center justify-center mt-2">
-              ➔
+            <div className="bg-[#ffff00] rounded-full flex items-center justify-center w-8 h-8 mt-2">
+<FaArrowRightLong className="text-[#000] text-[20px]"/>
+            </div>
             </div>
           </div>
         </div>
 
         {/* Back Side */}
         <div className="absolute w-full h-full rounded-xl bg-[#2c2c2c] text-white flex flex-col justify-center p-4 [backface-visibility:hidden] [transform:rotateY(180deg)]">
+          <div className="">
+            <h1 className="text-left text-[40px] text-[#ffffff]">Profile</h1>
+          </div>
           <ul className="list-none space-y-2 text-[14px] leading-relaxed">
             {backItems.map((item, index) => (
               <li key={index} className="before:content-['•'] before:mr-2">

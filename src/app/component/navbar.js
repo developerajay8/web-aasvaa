@@ -126,7 +126,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-4">
             <img src="/Frame 3384981.png" alt="phone icon" />
             <div>
-              <button className="rounded-[10px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
+              <button className="rounded-[10px] cursor-pointer text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
                 Contact us
               </button>
             </div>

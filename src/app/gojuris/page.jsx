@@ -21,12 +21,12 @@ const features = [
     text: "Document Upload & Analysis",
   },
   {
-    icon: "/images/dashboard_12177174 1.png",
-    text: "Bucitation-Based Case Search & Dashboard",
+    icon: "/images/connection_16514714 1 (4).png",
+    text: "Citation-Based Case Search",
   },
   {
-    icon: "/images/dashboard_12177174 1.png",
-    text: "Privacy-First AI",
+    icon: "/images/connection_16514714 1 (5).png",
+    text: "Privacy-first AI",
   },
 ];
 
@@ -37,12 +37,12 @@ export default function Page() {
             <section style={{
                 backgroundImage: 'url("/images/Frame 3384776 (2).png")',
             }} className="md:h-[88vh] w-full bg-cover bg-center overflow-hidden md:py-0 py-[80px] flex items-center justify-center bg-gradient-to-br from-[#0b0b0b] via-[#121212] to-[#1c1c1c] text-white">
-                <div className="max-w-[1240px] mx-auto my-auto px-6 md:px-12 flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-10">
+                <div className="max-w-[1240px] mx-auto my-auto px-6 md:px-12 flex flex-col-reverse lg:flex-row items-center justify-between w-full sm:gap-20 gap-10">
 
                     {/* Left: Logo */}
                     <div className="flex-shrink-0 lg:block hidden relative">
                         <img
-                            src="/images/image 62.png"
+                            src="/images/image 22650.png"
                             alt="LUMDX Logo"
                             className="relative z-10 "
                         />
@@ -186,7 +186,7 @@ export default function Page() {
 
                         {/* Left Side: Image */}
                         <div className="w-full md:w-1/2">
-                            <img src="/images/Frame 3385262.png" className="w-full md:block hidden h-auto" alt="AI Case Search" />
+                            <img src="/images/MacBook Pro.png" className="w-full md:block hidden h-auto" alt="AI Case Search" />
                             <img src="/images/Frame 3385262 (1).png" alt="" className='md:hidden block'/>
                         </div>
 

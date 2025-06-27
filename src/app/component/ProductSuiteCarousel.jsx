@@ -1,61 +1,4 @@
-// "use client";
-// import React from 'react';
-// import { ChevronLeft, ChevronRight } from "lucide-react";
-// const ProductSuiteCarousel = () => {
-//   return (
-//     <div className="md:py-[80px] py-[48px] bg-black ">
-//       <div className="xl:px-0 px-[16px] max-w-[1240px] mx-auto pb-[48px] ">
-//         <h1 className='text-[#F6F6F6] text-[48px] font-medium text-center'>
-//           Our Product Suite
-//         </h1>
-//       </div>
-//       <div className="xl:px-0 px-[16px]  max-w-[1240px] relative flex gap-[41px] mx-auto  ">
-//         <div className="w-[15%] ">
 
-//           <div className="absolute left-[-6%] top-1/2 transform -translate-y-1/2 rotate-[-90deg] text-7xl tracking-widest font-bold text-gray-400">
-//             GEN AI
-//           </div>
-//           <div className="flex absolute bottom-0 items-center gap-6 justify-center py-8">
-//             {/* Left Arrow */}
-//             <div className="w-[60px] h-[60px] rounded-full border-[2px] cursor-pointer border-[#FFFF00] flex items-center justify-center hover:scale-110 transition">
-//               <ChevronLeft size={32} className="text-[#FFFF00]" />
-//             </div>
-
-//             {/* Right Arrow */}
-//             <div className="w-[60px] h-[60px] rounded-full border-[2px] cursor-pointer border-[#FFFF00] flex items-center justify-center hover:scale-110 transition">
-//               <ChevronRight size={32} className="text-[#FFFF00]" />
-//             </div>
-//           </div>
-
-//         </div>
-//         <div className="w-[85%] md:flex flex-wrap gap-4">
-//           <div className="w-[48%] relative">
-//             <img src="/images/image (34).png" alt="" className='relative' />
-//             <div className='absolute top-40 left-6'>
-//               <button className="rounded-[10px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
-//                 Read More
-//               </button>
-//             </div>
-//           </div>
-//           <div className="w-[48%]">
-//             <img src="/images/image (34).png" alt="" />
-//           </div>
-//           <div className="w-[48%]">
-//             <img src="/images/image (34).png" alt="" />
-//           </div>
-//           <div className="w-[48%]">
-//             <img src="/images/image (34).png" alt="" />
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ProductSuiteCarousel;
-
-
-// Custom-coded Product Suite Carousel without .map()
 import { useState } from "react";
 
 export default function ProductSuiteCarousel() {
@@ -91,48 +34,48 @@ export default function ProductSuiteCarousel() {
       </h1>
       <div className="flex flex-col xl:px-0 px-4 md:flex-row gap-6 max-w-7xl mx-auto">
         {/* Sidebar */}
-        <div className="w-full md:w-[200px] space-y-4">
+        <div className="w-full md:w-[200px] space-y-5">
           <div>
             <h4 className="text-[28px] font-semibold mb-2 text-[#E6E6E6] ">Gen AI</h4>
-            <button
+            <h5
               onClick={() => {
                 setActive("gojuris");
                 setImgIndex(0);
               }}
-              className={`block w-full text-left px-2 py-1 md:text-[23px] text-[16px] rounded ${active === "gojuris"
-                ? "bg-gradient-to-r from-[#43430D] to-[#464646] origin-left text-[#FFFF00] font-bold"
+              className={`block w-full mb-3 cursor-pointer text-left px-2 py-1 md:text-[21px] text-[#E6E6E6] text-[16px] rounded ${active === "gojuris"
+                ? "bg-gradient-to-r from-[#43430D] to-[#464646] origin-left text-[#FFFF00] "
                 : ""
                 }`}
             >
               Gojuris
-            </button>
-            <button
+            </h5>
+            <h5
               onClick={() => {
                 setActive("aasvaa");
                 setImgIndex(0);
               }}
-              className={`block w-full text-left px-2 md:text-[23px] text-[16px] py-1 rounded ${active === "aasvaa"
-                ? "bg-gradient-to-r from-[#43430D] to-[#464646] origin-left text-[#FFFF00] font-bold"
+              className={`block w-full text-left px-2 cursor-pointer md:text-[21px] text-[16px] py-1 rounded ${active === "aasvaa"
+                ? "bg-gradient-to-r from-[#43430D] to-[#464646] origin-left text-[#FFFF00] "
                 : ""
                 }`}
             >
               Aasvaa Aera
-            </button>
+            </h5>
           </div>
           <div>
             <h3 className="text-[28px] font-semibold mb-2 text-[#E6E6E6]">Vision AI</h3>
-            <button
+            <h5
               onClick={() => {
                 setActive("lumex");
                 setImgIndex(0);
               }}
-              className={`block w-full text-left px-2 md:text-[23px] text-[16px] py-1 rounded ${active === "lumex"
-                ? "bg-gradient-to-r from-[#43430D] to-[#464646] origin-left text-[#FFFF00] font-bold"
+              className={`block w-full text-left cursor-pointer px-2 md:text-[21px] text-[16px] py-1 rounded ${active === "lumex"
+                ? "bg-gradient-to-r from-[#43430D] to-[#464646] origin-left text-[#FFFF00] "
                 : ""
                 }`}
             >
               Lumex
-            </button>
+            </h5>
           </div>
 
           {/* Arrows */}
@@ -208,7 +151,7 @@ export default function ProductSuiteCarousel() {
                     <img src="/images/Frame 3385214.png" alt="Aasvaa Main" />
                   </div>
                   <div className="">
-                    <img src="/images/Frame 3385235.png" alt="Aasvaa Side" />
+                    <img src="/images/Frame 3385299.png" alt="Aasvaa Side" />
                   </div>
                 </div>
                 </div>
@@ -216,10 +159,10 @@ export default function ProductSuiteCarousel() {
               <div className="sm:hidden block">
                 <div className="flex w-fit mx-auto flex-col gap-5 ">
                   <div className="">
-                    <img src="/images/Frame 3385214.png" alt="Aasvaa Main" />
+                    <img src="/images/Frame 3385300.png" alt="Aasvaa Main" />
                   </div>
                   <div className="">
-                    <img src="/images/Frame 3385235.png" alt="Aasvaa Side" />
+                    <img src="/images/Frame 3385299.png" alt="Aasvaa Side" />
                   </div>
                 </div>
                 </div>
