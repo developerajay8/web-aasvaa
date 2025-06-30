@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import { FaFacebookF, FaLinkedinIn, FaYoutube, FaTimes, FaPhoneAlt, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Footerlogo from "../../../public/logo.png"
+import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -29,10 +31,24 @@ const Footer = () => {
                 <div className="max-w-[80px] sm:mb-0 mb-[48px]">
                     <h3 className="text-[23px] font-[400] text-[#E6E6E6] mb-6">Explore</h3>
                     <ul className=" ">
-                        <li className="py-[10px] text-[14px] hover:text-[#ffff00] duration-500 font-[400] text-[#F6F6F6] "><a href="#">Products</a></li>
-                        <li className="py-[10px] text-[14px] hover:text-[#ffff00] duration-500 font-[400] text-[#F6F6F6] "><a href="#">Vision</a></li>
-                        <li className="py-[10px] text-[14px] hover:text-[#ffff00] duration-500 font-[400] text-[#F6F6F6] "><a href="#">Team</a></li>
-                        <li className="py-[10px] text-[14px] hover:text-[#ffff00] duration-500 font-[400] text-[#F6F6F6] "><a href="#">Investors</a></li>
+                        <li onClick={() => {
+    const section = document.getElementById("home");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }}  className="py-[10px] text-[14px] hover:text-[#ffff00] duration-500 font-[400] text-[#F6F6F6] cursor-pointer">Home</li>
+                        <li onClick={() => {
+    const section = document.getElementById("products");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }}  className="cursor-pointer py-[10px] text-[14px] hover:text-[#ffff00] duration-500 font-[400] text-[#F6F6F6] ">Products</li>
+                        <li onClick={() => {
+    const section = document.getElementById("journey");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }}  className="cursor-pointer py-[10px] text-[14px] hover:text-[#ffff00] duration-500 font-[400] text-[#F6F6F6] ">Journey</li>
                     </ul>
                 </div>
 
@@ -40,13 +56,9 @@ const Footer = () => {
                 <div className="max-w-[159px] sm:mb-0 mb-[48px]">
                 <h3 className="text-[23px] font-[400] text-[#E6E6E6] mb-6">About us</h3>
                     <ul className=" ">
-                        <li className="py-[10px] hover:text-[#ffff00] duration-500 text-[14px] font-[400] text-[#F6F6F6] "><a href="#">Who We Are</a></li>
-                        <li className="py-[10px] hover:text-[#ffff00] duration-500 text-[14px] font-[400] text-[#F6F6F6] "><a href="#">Our Vision</a></li>
-                        <li className="py-[10px] hover:text-[#ffff00] duration-500 text-[14px] font-[400] text-[#F6F6F6] "><a href="#">Our Mission</a></li>
-                        <li className="py-[10px] hover:text-[#ffff00] duration-500 text-[14px] font-[400] text-[#F6F6F6] "><a href="#">Our AI Capabilities</a></li>
-                        <li className="py-[10px] hover:text-[#ffff00] duration-500 text-[14px] font-[400] text-[#F6F6F6] "><a href="#">Our Core Belief</a></li>
-                        <li className="py-[10px] hover:text-[#ffff00] duration-500 text-[14px] font-[400] text-[#F6F6F6] "><a href="#">Our Core AI Specialties</a></li>
-                        <li className="py-[10px] hover:text-[#ffff00] duration-500 text-[14px] font-[400] text-[#F6F6F6] "><a href="#">Our Tech Stack</a></li>    
+                        <li className="py-[10px] hover:text-[#ffff00] duration-500 text-[14px] font-[400] text-[#F6F6F6] "><Link href="/gojuris">Gojuris</Link></li>
+                        <li className="py-[10px] hover:text-[#ffff00] duration-500 text-[14px] font-[400] text-[#F6F6F6] "><Link href="/aasvaaera">AasvaaEra</Link></li>
+                        <li className="py-[10px] hover:text-[#ffff00] duration-500 text-[14px] font-[400] text-[#F6F6F6] "><Link href="/lumex">Lumex</Link></li>
                     </ul>
                 </div>
 

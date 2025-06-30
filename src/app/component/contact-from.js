@@ -4,7 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function ContactForm() {
   return (
-    <div
+    <div id="contact"
       className="bg-cover bg-center bg-gradient-to-r from-[#272700] to-[#1B1B1B] origin-left w-full"
       // style={{
       //   backgroundImage: 'url("/images/Frame 3384747.png")',

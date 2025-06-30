@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 export default function Herosection() {
   return (
     <>
-      <div
+      <div id="home"
         className="bg-cover bg-center w-full"
         style={{
           backgroundImage: 'url("/images/Home.jpg")',
@@ -29,15 +29,25 @@ export default function Herosection() {
 
               <p className="text-gray-300 text-lg mb-6 max-w-[500px] mx-auto leading-relaxed">
                 From legal intelligence to cultural preservation — we &lsquo; re
-                building <span className="text-[#ffff00]">Bharat</span> &lsquo; s very own Gen AI ecosystem.
+                building <span className="text-[#ffff00]">Bharat &lsquo;s </span> very own Gen AI ecosystem.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
-                <button className="rounded-[10px] w-fit text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
+                <button onClick={() => {
+    const section = document.getElementById("contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }} className="rounded-[10px] cursor-pointer w-fit text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
                   Join the Movement
                 </button>
 
-                <button className="cursor-pointer w-fit group text-[#F6F6F6] bg-transparent hover:border-none border-[2px] border-[#F6F6F6] rounded-[10px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black    py-[15px] px-[22px] text-[16px] font-[600]  relative">
+                <button onClick={() => {
+    const section = document.getElementById("products");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }} className="cursor-pointer w-fit group text-[#F6F6F6] bg-transparent hover:border-none border-[2px] border-[#F6F6F6] rounded-[10px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black    py-[15px] px-[22px] text-[16px] font-[600]  relative">
                   <span className="inline-block transition-all duration-300 group-hover:pr-5">
                     Explore Our AI Products
                   </span>
@@ -64,15 +74,25 @@ export default function Herosection() {
 
               <p className="text-gray-300 text-base mb-6 leading-relaxed">
                 From legal intelligence to cultural preservation — we&lsquo; re
-                building <span className="text-[#ffff00]">Bharat</span>  &lsquo; s very own Gen AI ecosystem.
+                building <span className="text-[#ffff00]">Bharat &lsquo;s </span> very own Gen AI ecosystem.
               </p>
 
               <div className="flex flex-col gap-4 mb-10">
-                <button className="rounded-[10px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
+                <button onClick={() => {
+    const section = document.getElementById("contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }} className="rounded-[10px] cursor-pointer text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
                   Join the Movement
                 </button> 
 
-                <button className="cursor-pointer group text-[#F6F6F6] bg-transparent hover:border-none border-[2px] border-[#F6F6F6] rounded-[10px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black    py-[15px] px-[22px] text-[16px] font-[600]  relative">
+                <button onClick={() => {
+    const section = document.getElementById("products");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }} className="cursor-pointer group text-[#F6F6F6] bg-transparent hover:border-none border-[2px] border-[#F6F6F6] rounded-[10px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black    py-[15px] px-[22px] text-[16px] font-[600]  relative">
                   <span className="inline-block transition-all duration-300 group-hover:pr-5">
                     Explore Our AI Products
                   </span>

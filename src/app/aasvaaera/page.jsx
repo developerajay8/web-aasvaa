@@ -106,17 +106,22 @@ export default function Page() {
 
                         <div className="mt-9 flex flex-wrap gap-4 justify-center lg:justify-start">
 
-                            <button className="rounded-[10px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 md:hover:bg-[#FFFF00]  hover:text-black hover:shadow-yellow-glow custom-glow">
-                                Launch a Free Demo
+                            <button onClick={() => {
+    const section = document.getElementById("contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }}   className="cursor-pointer rounded-[10px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 md:hover:bg-[#FFFF00]  hover:text-black hover:shadow-yellow-glow custom-glow">
+                                Contact Us
                             </button>
-                            <button className="cursor-pointer group text-[#F6F6F6] bg-transparent hover:border-none border-[2px] border-[#F6F6F6] rounded-[10px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black    py-[15px] px-[22px] text-[16px] font-[600]  relative">
+                            {/* <button className="cursor-pointer group text-[#F6F6F6] bg-transparent hover:border-none border-[2px] border-[#F6F6F6] rounded-[10px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black    py-[15px] px-[22px] text-[16px] font-[600]  relative">
                                 <span className="inline-block transition-all duration-300 group-hover:pr-5">
                                     View Developer Docs
                                 </span>
                                 <span className="absolute top-1/2 -translate-y-1/2 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300">
                                     <FaArrowRightLong className='text-2xl' />
                                 </span>
-                            </button>
+                            </button> */}
 
                         </div>
                     </div>
@@ -160,9 +165,9 @@ export default function Page() {
 
 
 
-                        <button className="rounded-[10px] cursor-pointer mt-[48px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
+                        {/* <button className="rounded-[10px] cursor-pointer mt-[48px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
                             Explore GoJuris Features
-                        </button>
+                        </button> */}
 
                     </div>
 

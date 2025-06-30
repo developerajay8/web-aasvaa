@@ -126,7 +126,12 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-4">
             <img src="/Frame 3384981.png" alt="phone icon" />
             <div>
-              <button className="rounded-[10px] cursor-pointer text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
+              <button onClick={() => {
+    const section = document.getElementById("contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }}  className="rounded-[10px] cursor-pointer text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
                 Contact us
               </button>
             </div>
@@ -256,7 +261,12 @@ export default function Navbar() {
                 <button className="border border-yellow-400 text-yellow-400 px-4 py-2 rounded text-sm  transition-colors">
                   Login
                 </button>
-                <button className="bg-yellow-400 text-black px-4 py-2 rounded text-sm hover:bg-yellow-500 transition-colors">
+                <button onClick={() => {
+    const section = document.getElementById("contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }}  className="bg-yellow-400 text-black px-4 py-2 rounded text-sm hover:bg-yellow-500 transition-colors">
                   Contact us
                 </button>
               </div>

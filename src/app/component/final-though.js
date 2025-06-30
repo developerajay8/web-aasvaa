@@ -21,7 +21,12 @@ export default function Finalthough() {
 
                         <div className="pt-4">
                             <p className='text-[#cccccc] text-[16px] font-[400] '>Aasvaa Innovation Labs is not just an AI company—it’s the future of India’s AI revolution. With a vision to lead AI, GenAI, and Computer Vision, we are building the next era of intelligent systems for governance, defence, law, and society.</p>
-                            <button className="cursor-pointer group sm:mt-[48px] mt-[32px]  text-[#FFFF00] bg-gray-500 rounded-[10px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow  py-[15px] px-[22px] text-[16px] font-[600]  relative">
+                            <button onClick={() => {
+    const section = document.getElementById("contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }} className="cursor-pointer group sm:mt-[48px] mt-[32px]  text-[#FFFF00] bg-gray-500 rounded-[10px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow  py-[15px] px-[22px] text-[16px] font-[600]  relative">
                                 <span className="inline-block transition-all duration-300 group-hover:pr-5">
                                     Join the Movement
                                 </span>

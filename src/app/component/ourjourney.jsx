@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Ourjourney() {
   return (
-    <div style={{
+    <div id='journey' style={{
             backgroundImage: 'url("/images/Desktop - 8 (4).png")',
           }} className=' bg-center w-full bg-cover'>
         <div className="max-w-[1240px] mx-auto xl:px-0 md:py-[80px] py-[48px] px-4">

@@ -1,33 +1,34 @@
-// "use client";
+"use client";
 import React from 'react'
 import Navbar from '../component/navbar'
 import Image from 'next/image'
 import ContactForm from '../component/contact-from'
 import Footer from '../component/footer'
 import { FaArrowRightLong } from 'react-icons/fa6'
+import Link from 'next/link'
 // import { Shield, Book, FileText, Search, Lock } from "lucide-react";
 
 const features = [
-  {
-    icon: "/images/Frame 206.png", // Replace with your actual image path
-    text: "1 Crore+ Indian Cases",
-  },
-  {
-    icon: "/images/viral-marketing_15888297_svgrepo.com.png",
-    text: "Smart Summaries",
-  },
-  {
-    icon: "/images/connection_16514714 1.png",
-    text: "Document Upload & Analysis",
-  },
-  {
-    icon: "/images/connection_16514714 1 (4).png",
-    text: "Citation-Based Case Search",
-  },
-  {
-    icon: "/images/connection_16514714 1 (5).png",
-    text: "Privacy-first AI",
-  },
+    {
+        icon: "/images/Frame 206.png", // Replace with your actual image path
+        text: "1 Crore+ Indian Cases",
+    },
+    {
+        icon: "/images/viral-marketing_15888297_svgrepo.com.png",
+        text: "Smart Summaries",
+    },
+    {
+        icon: "/images/connection_16514714 1.png",
+        text: "Document Upload & Analysis",
+    },
+    {
+        icon: "/images/connection_16514714 1 (4).png",
+        text: "Citation-Based Case Search",
+    },
+    {
+        icon: "/images/connection_16514714 1 (5).png",
+        text: "Privacy-first AI",
+    },
 ];
 
 export default function Page() {
@@ -59,12 +60,19 @@ export default function Page() {
                             {/* <button className="bg-[#d6ff00] text-black px-5 py-2 rounded-md font-semibold hover:bg-[#f3ff4b] transition">
               Join the Movement
             </button> */}
-                            <button className="rounded-[10px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
-                                Start Free Trial
+                            <button className="cursor-pointer rounded-[10px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
+                                <Link href="https://www.aasvaa.in/" target="_blank" rel="noopener noreferrer">
+                                    Explore
+                                </Link>
                             </button>
-                            <button className="cursor-pointer group text-[#F6F6F6] bg-transparent hover:border-none border-[2px] border-[#F6F6F6] rounded-[10px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black    py-[15px] px-[22px] text-[16px] font-[600]  relative">
+                            <button onClick={() => {
+                                const section = document.getElementById("contact");
+                                if (section) {
+                                    section.scrollIntoView({ behavior: "smooth" });
+                                }
+                            }} className="cursor-pointer group text-[#F6F6F6] bg-transparent hover:border-none border-[2px] border-[#F6F6F6] rounded-[10px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black    py-[15px] px-[22px] text-[16px] font-[600]  relative">
                                 <span className="inline-block transition-all duration-300 group-hover:pr-5">
-                                    Explore Our AI Products
+                                    Contact Us
                                 </span>
                                 <span className="absolute top-1/2 -translate-y-1/2 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300">
                                     <FaArrowRightLong className='text-2xl' />
@@ -88,46 +96,46 @@ export default function Page() {
             <section style={{
                 backgroundImage: 'url("/images/Frame 3385290.png")',
             }} className=" text-white bg-cover bg-center w-full px-4 md:px-16 md:py-[80px] py-[48px] relative overflow-hidden">
-      <div className="max-w-[1240px] mx-auto grid lg:grid-cols-2 gap-8 ">
-        {/* Left Side */}
-        <div>
-          <h2 className="text-3xl md:text-5xl font-semibold mb-8 text-[white]">About</h2>
-          <h4 className="text-[#ffff00] text-[28px] font-semibold mb-8">
-            Built for the Indian Legal System.<br />Powered by AI.
-          </h4>
+                <div className="max-w-[1240px] mx-auto grid lg:grid-cols-2 gap-8 ">
+                    {/* Left Side */}
+                    <div>
+                        <h2 className="text-3xl md:text-5xl font-semibold mb-8 text-[white]">About</h2>
+                        <h4 className="text-[#ffff00] text-[28px] font-semibold mb-8">
+                            Built for the Indian Legal System.<br />Powered by AI.
+                        </h4>
 
-          <ul className="space-y-4 text-sm md:text-base text-white/90">
-            {features.map((feature, idx) => (
-              <li key={idx} className="flex items-center">
-                <img
-                  src={feature.icon}
-                  alt="Feature icon"
-                  className="mr-6"
-                />
-                <span className='text-[#FFFF00] tracking-[6px] text-[16px] uppercase'>{feature.text}</span>
-              </li>
-            ))}
-          </ul>
+                        <ul className="space-y-4 text-sm md:text-base text-white/90">
+                            {features.map((feature, idx) => (
+                                <li key={idx} className="flex items-center">
+                                    <img
+                                        src={feature.icon}
+                                        alt="Feature icon"
+                                        className="mr-6"
+                                    />
+                                    <span className='text-[#FFFF00] tracking-[6px] text-[16px] uppercase'>{feature.text}</span>
+                                </li>
+                            ))}
+                        </ul>
 
-        
 
-<button className="rounded-[10px] cursor-pointer mt-[48px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
-                                Explore GoJuris Features
-                            </button>
 
-        </div>
+                        {/* <button className="rounded-[10px] cursor-pointer mt-[48px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
+                            Explore GoJuris Features
+                        </button> */}
 
-        {/* Right Side */}
-        <div className=" my-auto">
-          <img
-            src="/images/About (1).png"
-            alt="GoJuris AI Chat"
-          
-            className=""
-          />
-        </div>
-      </div>
-    </section>
+                    </div>
+
+                    {/* Right Side */}
+                    <div className=" my-auto">
+                        <img
+                            src="/images/About (1).png"
+                            alt="GoJuris AI Chat"
+
+                            className=""
+                        />
+                    </div>
+                </div>
+            </section>
 
 
             <div style={{
@@ -154,9 +162,9 @@ export default function Page() {
                         <p className='text-[#BCBBC0] text-[16px] text-center'>Get statute-specific answers, relevant case laws, and legal interpretations without needing to open 20 tabs.</p>
                     </div>
 
-                    <button className="rounded-[10px] cursor-pointer w-fit mx-auto text-[16px] flex justify-center items-center font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
+                    {/* <button className="rounded-[10px] cursor-pointer w-fit mx-auto text-[16px] flex justify-center items-center font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
                         Try the Chatbot
-                    </button>
+                    </button> */}
 
                 </div>
             </div>
@@ -187,7 +195,7 @@ export default function Page() {
                         {/* Left Side: Image */}
                         <div className="w-full md:w-1/2">
                             <img src="/images/MacBook Pro.png" className="w-full md:block hidden h-auto" alt="AI Case Search" />
-                            <img src="/images/Frame 3385262 (1).png" alt="" className='md:hidden block'/>
+                            <img src="/images/Frame 3385262 (1).png" alt="" className='md:hidden block' />
                         </div>
 
                         {/* Right Side: Text and Button */}
@@ -198,9 +206,9 @@ export default function Page() {
                             <p className="text-[#F6F6F6] text-[16px] pb-[32px] md:pb-[48px]">
                                 Search by keywords, parties involved, citations, or legal statutes. Filter your results by court, year, judge, or section with an intelligent search system that understands legal intent — not just keywords.
                             </p>
-                            <button className="rounded-[10px] cursor-pointer text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
+                            {/* <button className="rounded-[10px] cursor-pointer text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
                                 Explore
-                            </button>
+                            </button> */}
                         </div>
 
                     </div>
@@ -261,7 +269,7 @@ export default function Page() {
                 </div>
             </div>
 
-            
+
 
 
 

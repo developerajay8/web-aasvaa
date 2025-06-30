@@ -28,7 +28,7 @@ export default function ProductSuiteCarousel() {
   return (
     <div   style={{
             backgroundImage: 'url("/images/Desktop - 23.png")',
-          }}  className=" bg-cover bg-center w-full text-white py-[48px] md:py-[80px] font-sans">
+          }} id="products" className=" bg-cover bg-center w-full text-white py-[48px] md:py-[80px] font-sans">
       <h1 className="text-[40px] md:text-5xl xl:px-0 px-4 mb-8 text-center">
         Our Product Suite
       </h1>

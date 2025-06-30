@@ -1,9 +1,11 @@
+"use client";
 import React from 'react'
 import Navbar from '../component/navbar'
 import Image from 'next/image'
 import ContactForm from '../component/contact-from'
 import Footer from '../component/footer'
 import { FaArrowRightLong } from 'react-icons/fa6'
+import Link from 'next/link'
 
 const features = [
     {
@@ -22,7 +24,7 @@ const features = [
         icon: "/images/dashboard_12177174 1.png",
         text: "Business Dashboard",
     },
-    
+
 ];
 export default function Page() {
     return (
@@ -46,8 +48,8 @@ export default function Page() {
                     {/* Right: Text + Buttons */}
                     <div className="text-center lg:text-left max-w-[752px]">
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-[#F6F6F6]">
-                            Turn Moments into Business <br className='sm:block hidden'/>
-                            with the <span className="text-[#FFFF00]">Fastest AI SaaS</span> <br className='sm:block hidden'/>
+                            Turn Moments into Business <br className='sm:block hidden' />
+                            with the <span className="text-[#FFFF00]">Fastest AI SaaS</span> <br className='sm:block hidden' />
                             <span className="text-[#FFFF00]">Solution</span>
                         </h1>
 
@@ -55,13 +57,20 @@ export default function Page() {
                             {/* <button className="bg-[#d6ff00] text-black px-5 py-2 rounded-md font-semibold hover:bg-[#f3ff4b] transition">
               Join the Movement
             </button> */}
-                            <button className="rounded-[10px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
-                                Join the Movement
+                            <button className="cursor-pointer rounded-[10px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
+                                <Link href="https://www.aasvaalabs.com/" target="_blank" rel="noopener noreferrer">
+                                    Explore
+                                </Link>
                             </button>
 
-                            <button className="cursor-pointer group text-[#F6F6F6] bg-transparent hover:border-none border-[2px] border-[#F6F6F6] rounded-[10px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black    py-[15px] px-[22px] text-[16px] font-[600]  relative">
+                            <button onClick={() => {
+                                const section = document.getElementById("contact");
+                                if (section) {
+                                    section.scrollIntoView({ behavior: "smooth" });
+                                }
+                            }} className="cursor-pointer group text-[#F6F6F6] bg-transparent hover:border-none border-[2px] border-[#F6F6F6] rounded-[10px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black    py-[15px] px-[22px] text-[16px] font-[600]  relative">
                                 <span className="inline-block transition-all duration-300 group-hover:pr-5">
-                                    Explore Our AI Products
+                                    Contact Us
                                 </span>
                                 <span className="absolute top-1/2 -translate-y-1/2 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300">
                                     <FaArrowRightLong className='text-2xl' />
@@ -86,124 +95,124 @@ export default function Page() {
 
             <section style={{
                 backgroundImage: 'url("/images/Frame 3385296.png")',
-            }}  className="w-full bg-cover bg-center text-white px-4 xl:px-0 md:py-[80px] py-[48px] relative overflow-hidden">
-<div className="lg:block hidden">
-                <div className="max-w-[1240px]  mx-auto grid lg:grid-cols-6  gap-8 ">
+            }} className="w-full bg-cover bg-center text-white px-4 xl:px-0 md:py-[80px] py-[48px] relative overflow-hidden">
+                <div className="lg:block hidden">
+                    <div className="max-w-[1240px]  mx-auto grid lg:grid-cols-6  gap-8 ">
 
-                    {/* Left Side */}
-                    <div className="col-span-4 md:flex gap-5 w-fit mx-auto">
-                        <div className="md:flex flex-col md:space-y-0 space-y-4 gap-11">
-                        <img
-                            src="/images/image 44.png"
-                            alt="GoJuris AI Chat"
-                        />
-                         <img
-                            src="/images/Group 34.svg"
-                            alt="GoJuris AI Chat"
-                        />
-                    </div>
-                        <div className="flex w-fit mx-auto  md:flex-col  gap-5">
-                            <img
-                            src="/images/image 46.png"
-                            alt="GoJuris AI Chat"
-                        />
-                         <img
-                            src="/images/image 47.png"
-                            alt="GoJuris AI Chat"
-                        />
-                    </div>
-                    </div>
-                    {/* Right Side */}
-                    <div className='col-span-2'>
-                        <h2 className="text-3xl md:text-5xl font-semibold mb-8 text-[white]">About</h2>
-                        <h4 className="text-[#BCBBC0] text-[16px] mb-8">
-                            We offer AI-powered face recognition technology with a swift processing time of 0.05 seconds, enabling businesses to efficiently manage photos and videos. Our platform provides customizable solutions designed to meet the unique needs and budgets of our clients. With features like seamless image and video retrieval, advanced editing options, and tools to create collages and reels, we streamline workflows and enhance user experience.
-                        </h4>
-
-                        <ul className="space-y-4 text-sm md:text-base text-white/90">
-                            {features.map((feature, idx) => (
-                                <li key={idx} className="flex items-center">
-                                    <img
-                                        src={feature.icon}
-                                        alt="Feature icon"
-                                        className="mr-6"
-                                    />
-                                    <span className='text-[#FFFF00] tracking-[6px] text-[16px] uppercase'>{feature.text}</span>
-                                </li>
-                            ))}
-                        </ul>
-
-
-
-                        <button className="rounded-[10px] cursor-pointer mt-[48px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
-                            Explore GoJuris Features
-                        </button>
-
-                    </div>
-
-
-                </div>
-                </div>
-<div className="lg:hidden block">
-                <div className="max-w-[1240px]  mx-auto grid lg:grid-cols-2  gap-8 ">
-
-                    {/* Left Side */}
-                    <div className="col-span-1 md:flex gap-5 w-fit mx-auto">
-                        <div className="flex flex-col md:space-y-0 space-y-2 gap-11">
-                        <img
-                            src="/images/image 44.png"
-                            alt="GoJuris AI Chat"
-                        />
-                         <img
-                            src="/images/Group 34.svg"
-                            alt="GoJuris AI Chat"
-                        />
-                        <div className="flex gap-3 ">
-                            <div className="">
-                          <img
-                            src="/images/image 46.png"
-                            alt="GoJuris AI Chat"
-                        />
+                        {/* Left Side */}
+                        <div className="col-span-4 md:flex gap-5 w-fit mx-auto">
+                            <div className="md:flex flex-col md:space-y-0 space-y-4 gap-11">
+                                <img
+                                    src="/images/image 44.png"
+                                    alt="GoJuris AI Chat"
+                                />
+                                <img
+                                    src="/images/Group 34.svg"
+                                    alt="GoJuris AI Chat"
+                                />
+                            </div>
+                            <div className="flex w-fit mx-auto  md:flex-col  gap-5">
+                                <img
+                                    src="/images/image 46.png"
+                                    alt="GoJuris AI Chat"
+                                />
+                                <img
+                                    src="/images/image 47.png"
+                                    alt="GoJuris AI Chat"
+                                />
+                            </div>
                         </div>
-                            <div className="">
-                         <img
-                            src="/images/image 47.png"
-                            alt="GoJuris AI Chat"
-                        />
+                        {/* Right Side */}
+                        <div className='col-span-2'>
+                            <h2 className="text-3xl md:text-5xl font-semibold mb-8 text-[white]">About</h2>
+                            <h4 className="text-[#BCBBC0] text-[16px] mb-8">
+                                We offer AI-powered face recognition technology with a swift processing time of 0.05 seconds, enabling businesses to efficiently manage photos and videos. Our platform provides customizable solutions designed to meet the unique needs and budgets of our clients. With features like seamless image and video retrieval, advanced editing options, and tools to create collages and reels, we streamline workflows and enhance user experience.
+                            </h4>
+
+                            <ul className="space-y-4 text-sm md:text-base text-white/90">
+                                {features.map((feature, idx) => (
+                                    <li key={idx} className="flex items-center">
+                                        <img
+                                            src={feature.icon}
+                                            alt="Feature icon"
+                                            className="mr-6"
+                                        />
+                                        <span className='text-[#FFFF00] tracking-[6px] text-[16px] uppercase'>{feature.text}</span>
+                                    </li>
+                                ))}
+                            </ul>
+
+
+
+                            {/* <button className="rounded-[10px] cursor-pointer mt-[48px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
+                                Explore GoJuris Features
+                            </button> */}
+
                         </div>
-                        </div>
-                    </div>
-                    </div>
-                    {/* Right Side */}
-                    <div className='col-span-1'>
-                        <h2 className="text-3xl md:text-5xl font-semibold mb-8 text-[white]">About</h2>
-                        <h4 className="text-[#BCBBC0] text-[16px] mb-8">
-                            We offer AI-powered face recognition technology with a swift processing time of 0.05 seconds, enabling businesses to efficiently manage photos and videos. Our platform provides customizable solutions designed to meet the unique needs and budgets of our clients. With features like seamless image and video retrieval, advanced editing options, and tools to create collages and reels, we streamline workflows and enhance user experience.
-                        </h4>
 
-                        <ul className="space-y-4 text-sm md:text-base text-white/90">
-                            {features.map((feature, idx) => (
-                                <li key={idx} className="flex items-center">
-                                    <img
-                                        src={feature.icon}
-                                        alt="Feature icon"
-                                        className="mr-6"
-                                    />
-                                    <span className='text-[#FFFF00] tracking-[6px] text-[16px] uppercase'>{feature.text}</span>
-                                </li>
-                            ))}
-                        </ul>
-
-
-
-                        <button className="rounded-[10px] cursor-pointer mt-[48px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
-                            Explore GoJuris Features
-                        </button>
 
                     </div>
-
-
                 </div>
+                <div className="lg:hidden block">
+                    <div className="max-w-[1240px]  mx-auto grid lg:grid-cols-2  gap-8 ">
+
+                        {/* Left Side */}
+                        <div className="col-span-1 md:flex gap-5 w-fit mx-auto">
+                            <div className="flex flex-col md:space-y-0 space-y-2 gap-11">
+                                <img
+                                    src="/images/image 44.png"
+                                    alt="GoJuris AI Chat"
+                                />
+                                <img
+                                    src="/images/Group 34.svg"
+                                    alt="GoJuris AI Chat"
+                                />
+                                <div className="flex gap-3 ">
+                                    <div className="">
+                                        <img
+                                            src="/images/image 46.png"
+                                            alt="GoJuris AI Chat"
+                                        />
+                                    </div>
+                                    <div className="">
+                                        <img
+                                            src="/images/image 47.png"
+                                            alt="GoJuris AI Chat"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* Right Side */}
+                        <div className='col-span-1'>
+                            <h2 className="text-3xl md:text-5xl font-semibold mb-8 text-[white]">About</h2>
+                            <h4 className="text-[#BCBBC0] text-[16px] mb-8">
+                                We offer AI-powered face recognition technology with a swift processing time of 0.05 seconds, enabling businesses to efficiently manage photos and videos. Our platform provides customizable solutions designed to meet the unique needs and budgets of our clients. With features like seamless image and video retrieval, advanced editing options, and tools to create collages and reels, we streamline workflows and enhance user experience.
+                            </h4>
+
+                            <ul className="space-y-4 text-sm md:text-base text-white/90">
+                                {features.map((feature, idx) => (
+                                    <li key={idx} className="flex items-center">
+                                        <img
+                                            src={feature.icon}
+                                            alt="Feature icon"
+                                            className="mr-6"
+                                        />
+                                        <span className='text-[#FFFF00] tracking-[6px] text-[16px] uppercase'>{feature.text}</span>
+                                    </li>
+                                ))}
+                            </ul>
+
+
+
+                            {/* <button className="rounded-[10px] cursor-pointer mt-[48px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
+                                Explore GoJuris Features
+                            </button> */}
+
+                        </div>
+
+
+                    </div>
                 </div>
             </section>
 
@@ -367,7 +376,7 @@ export default function Page() {
                                 />
                                 <h5 className='text-[#ffff00] text-[23px] pt-[16px] text-center'>Create an Event</h5>
                                 <p className="text-center text-white text-[14px] my-[8px]">
-                                   Upload media and enable face recognition
+                                    Upload media and enable face recognition
                                 </p>
                             </div>
                             <div className="w-[20%]">
@@ -380,11 +389,11 @@ export default function Page() {
                                 />
                                 <h5 className='text-[#ffff00] text-[23px] pt-[16px] text-center'>Send Access Link</h5>
                                 <p className="text-center text-white text-[14px] my-[8px]">
-                                   Share via email, WhatsApp, or QR
+                                    Share via email, WhatsApp, or QR
                                 </p>
                             </div>
 
-                           
+
                             <div className="w-[20%]">
                                 <img
                                     src="/images/Group 3.png"
@@ -399,7 +408,7 @@ export default function Page() {
                                 </p>
                             </div>
 
-                             <div className="w-[20%]">
+                            <div className="w-[20%]">
                                 <img
                                     src="/images/Group.png"
                                     width={98}
@@ -422,7 +431,7 @@ export default function Page() {
                                 />
                                 <h5 className='text-[#ffff00] text-[23px] pt-[16px] text-center'>Download or Edit</h5>
                                 <p className="text-center text-white text-[14px] my-[8px]">
-                                   Users can download media or generate custom reels
+                                    Users can download media or generate custom reels
                                 </p>
                             </div>
                         </div>
@@ -505,9 +514,9 @@ export default function Page() {
                         </div>
                     </div>
 
-                    <button className="rounded-[10px] cursor-pointer w-fit mx-auto mt-[48px] flex justify-center items-center text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
+                    {/* <button className="rounded-[10px] cursor-pointer w-fit mx-auto mt-[48px] flex justify-center items-center text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
                         Try Lumex in Action
-                    </button>
+                    </button> */}
                 </div>
             </div>
 
@@ -569,7 +578,7 @@ export default function Page() {
                     </p>
 
                     {/* CTA Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+                    {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
                         <button className="rounded-[10px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
                             Arrange a Discovery Call
                         </button>
@@ -582,7 +591,7 @@ export default function Page() {
                                 <FaArrowRightLong className='text-2xl' />
                             </span>
                         </button>
-                    </div>
+                    </div> */}
 
                     {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         <button className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-lg transition-colors duration-300 text-sm md:text-base">
