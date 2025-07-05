@@ -59,7 +59,7 @@ export default function ProductSuiteCarousel() {
                 : ""
                 }`}
             >
-              Aasvaa Aera
+              AasvaaEra 
             </h5>
           </div>
           <div>
