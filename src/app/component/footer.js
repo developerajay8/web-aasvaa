@@ -75,13 +75,7 @@ const Footer = () => {
                                 313, Subhash Colony, Shastri Nagar, Jaipur
                             </div>
                         </div>
-                        <div className="flex items-start gap-2 py-[10px] text-[14px] font-[400] text-[#F6F6F6]">
-                            <FaMapMarkerAlt className="text-[#FFFF00] mt-1" />
-                            <div>
-                                <strong className="text-white">Corporate and Branch office</strong><br />
-                                313, Subhash Colony, Shastri Nagar, Jaipur
-                            </div>
-                        </div>
+                        
                         {/* Email Input */}
                         <form className="flex mt-4 max-w-[426px]">
                             <input

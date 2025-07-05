@@ -13,13 +13,13 @@ export default function Herosection() {
       >
         <div className="  overflow-hidden">
           {/* Main Content */}
-          <div className="relative z-10 flex flex-col items-center justify-center min-h-[88vh] px-4 text-center">
+          <div className="relative z-10  flex flex-col items-center justify-center min-h-[88vh] px-4 text-center">
             {/* Desktop Layout */}
             <div className="hidden md:block text-center py-[70px]">
-              <div className="mb-5 w-fit mx-auto">
-                <img src="/images/remove black text copy 1 (2).png" alt=""/>
+              <div className="mb-5 w-fit  mx-auto animate__animated animate__fadeInDown">
+                <img src="/images/remove black text copy 1 (2).png" className="" alt=""/>
               </div>
-              <h1 className="text-6xl lg:text-[60px] font-semibold  mb-4 leading-tight">
+              <h1 className="text-6xl lg:text-[60px] font-semibold animate__animated animate__zoomIn  mb-4 leading-tight">
                 <span className="text-[#FFFF00]">AI</span>{" "}
                 <span className="text-white">That Works.</span>
                 <br />
@@ -32,7 +32,7 @@ export default function Herosection() {
                 building <span className="text-[#ffff00]">Bharat &lsquo;s </span> very own Gen AI ecosystem.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+              <div className=" animate__animated animate__bounceIn flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
                 <button onClick={() => {
     const section = document.getElementById("contact");
     if (section) {
@@ -47,7 +47,7 @@ export default function Herosection() {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-  }} className="cursor-pointer w-fit group text-[#F6F6F6] bg-transparent hover:border-none border-[2px] border-[#F6F6F6] rounded-[10px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black    py-[15px] px-[22px] text-[16px] font-[600]  relative">
+  }} className="cursor-pointer  w-fit group text-[#F6F6F6] bg-transparent hover:border-none border-[2px] border-[#F6F6F6] rounded-[10px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black    py-[15px] px-[22px] text-[16px] font-[600]  relative">
                   <span className="inline-block transition-all duration-300 group-hover:pr-5">
                     Explore Our AI Products
                   </span>

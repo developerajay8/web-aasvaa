@@ -1,4 +1,5 @@
 "use client";
+import 'animate.css';
 import { motion, useScroll, useSpring } from "framer-motion"
 import Herosection from "./component/hero-section";
 import Navbar from "./component/navbar";
