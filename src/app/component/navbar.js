@@ -124,7 +124,7 @@ export default function Navbar() {
 
           {/* Desktop Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <img src="/Frame 3384981.png" alt="phone icon" />
+            {/* <img src="/Frame 3384981.png" alt="phone icon" /> */}
             <div>
               <button onClick={() => {
     const section = document.getElementById("contact");
@@ -258,9 +258,9 @@ export default function Navbar() {
               </Link>
 
               <div className="flex space-x-2 px-3 pt-4">
-                <button className="border border-yellow-400 text-yellow-400 px-4 py-2 rounded text-sm  transition-colors">
+                {/* <button className="border border-yellow-400 text-yellow-400 px-4 py-2 rounded text-sm  transition-colors">
                   Login
-                </button>
+                </button> */}
                 <button onClick={() => {
     const section = document.getElementById("contact");
     if (section) {

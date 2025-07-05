@@ -67,7 +67,7 @@ const Footer = () => {
                     <h3 className="text-[23px] font-[400] text-[#E6E6E6] mb-6">Contact</h3>
                     <div className="">
                         <div className="flex items-center gap-2 py-[10px] text-[14px] font-[400] text-[#F6F6F6]"><FaPhoneAlt className="text-[#FFFF00]" /> +91 80588 88814</div>
-                        <div className="flex items-center py-[10px] text-[14px] font-[400] text-[#F6F6F6] gap-2"><MdEmail className="text-[#FFFF00]" /> info@aasvaa.in</div>
+                        <div className="flex items-center py-[10px] text-[14px] font-[400] text-[#F6F6F6] gap-2"><MdEmail className="text-[#FFFF00]" />saksham@aasvaalabs.com</div>
                         <div className="flex items-start gap-2 py-[10px] text-[14px] font-[400] text-[#F6F6F6]">
                             <FaMapMarkerAlt className="text-[#FFFF00] mt-1" />
                             <div>
