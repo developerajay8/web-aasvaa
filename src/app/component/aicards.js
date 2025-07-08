@@ -42,6 +42,7 @@ export default function AICards() {
           key={index}
           onMouseEnter={() => setHovered(index)}
           onMouseLeave={() => setHovered(null)}
+          // data-aos="zoom-in" data-aos-duration="4000"
           className={`transition-all duration-500 p-6 border-[1px] border-[#8E8E00] rounded-[10px] bg-gradient-to-r from-[#272700] to-[#1b1b1b] origin-left text-white
             ${hovered === index ? "shadow-[0_0_25px_4px_rgba(255,255,0,0.3)]" : ""}
           `}

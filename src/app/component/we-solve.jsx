@@ -14,18 +14,18 @@ export default function Wesolve() {
             <div className="sm:block hidden">
             <div className=" flex flex-col gap-5 ">
               <div className="flex gap-5">
-                <div className="">
+                <div data-aos="slide-right" data-aos-duration="8000" className="">
                   <img src="/images/image (36).png" alt="" />
                 </div>
-                <div className="">
+                <div data-aos="slide-left" data-aos-duration="8000" className="">
                   <img src="/images/Frame 118.png" alt="" />
                 </div>
               </div>
               <div className="flex gap-5">
-                <div className="">
+                <div data-aos="slide-right" data-aos-duration="8000" className="">
                   <img src="/images/Frame 120.png" alt="" />
                 </div>
-                <div className="">
+                <div data-aos="slide-left" data-aos-duration="8000" className="">
                   <img src="/images/Frame 121.png" alt="" />
                 </div>
               </div>
@@ -34,16 +34,16 @@ export default function Wesolve() {
 
             <div className="sm:hidden block">
             <div className=" flex w-fit mx-auto flex-col gap-5 ">
-                <div className="">
+                <div data-aos="slide-right" data-aos-duration="8000" className="">
                   <img src="/images/image (37).png" alt="" />
                 </div>
-                <div className="">
+                <div data-aos="slide-left" data-aos-duration="8000" className="">
                   <img src="/images/Frame 118 (1).png" alt="" />
                 </div>
-                <div className="">
+                <div data-aos="slide-right" data-aos-duration="8000"  className="">
                   <img src="/images/Frame 120 (1).png" alt="" />
                 </div>
-                <div className="">
+                <div data-aos="slide-left" data-aos-duration="8000" className="">
                   <img src="/images/Frame 121 (1).png" alt="" />
                 </div>
             </div>

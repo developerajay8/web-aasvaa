@@ -18,11 +18,12 @@ export default function Page() {
 
 
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Navbar />
 
       <section style={{
         backgroundImage: 'url("/images/Frame 3384776 (1).png")',
+        
       }} className=" w-full bg-cover bg-center md:h-[88vh] relative overflow-hidden">
         {/* Background Pattern */}
 
@@ -30,7 +31,7 @@ export default function Page() {
         <div className="max-w-[1240px] mx-auto px-6 py-20 relative z-10">
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-16 items-center">
             {/* Left Content */}
-            <div className="space-y-8">
+            <div data-aos="slide-right" data-aos-duration="8000" className="space-y-8">
               <div>
                 <h2 className="text-[#FFFF00] text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
                   About us
@@ -53,7 +54,7 @@ export default function Page() {
             </div>
 
             {/* Right Side - 3D Logo */}
-            <div className="flex justify-center lg:justify-end">
+            <div data-aos="slide-left" data-aos-duration="8000" className="flex justify-center lg:justify-end">
               <div className="relative">
                 {/* 3D "A" Logo */}
                 <div className="relative w-80 h-80 flex items-center justify-center">
@@ -87,7 +88,9 @@ export default function Page() {
       <div className="w-full bg-cover bg-center md:py-[80px] py-[48px] " style={{
         backgroundImage: 'url("/images/Frame 3384786.png")',
       }} >
-        <div className="max-w-[1240px] mx-auto xl:px-0 px-4 pb-[48px]">
+        <div 
+          data-aos="slide-up" data-aos-duration="8000"
+          className="max-w-[1240px] mx-auto xl:px-0 px-4 pb-[48px]">
           <h5 className='text-[23px] text-[#ffff00] '>Innovate. Accelerate. Lead. Transform.</h5>
           <h1 className='md:text-[60px] text-[48px] text-[#FFFFFF]'>Our Core Belief</h1>
         </div>
@@ -104,7 +107,8 @@ export default function Page() {
       }} >
 
         <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 grid-cols-1 gap-[80px] xl:px-0 px-4 ">
-          <div className="col-span-1">
+          <div data-aos="slide-right" data-aos-duration="4000"
+           className="col-span-1">
             <h3 className='text-[#FFFF00] font-bold text-[33px] pb-[32px]'>Our Mission</h3>
             <div className="   rounded-md">
               <ul className="list-decimal list-inside space-y-[4px] text-[16px] text-[#E6E6E6] leading-relaxed">
@@ -116,7 +120,8 @@ export default function Page() {
 
           </div>
 
-          <div className="col-span-1">
+          <div data-aos="slide-left" data-aos-duration="4000"
+           className="col-span-1">
             <h3 className='text-[#FFFF00] text-[33px] pb-[32px] font-bold'>Our Vision</h3>
             <div className="   rounded-md">
               <ul className=" space-y-[4px] text-[16px] text-[#E6E6E6] leading-relaxed">

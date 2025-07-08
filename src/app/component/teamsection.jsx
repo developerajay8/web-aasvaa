@@ -13,6 +13,7 @@ export default function TeamSection() {
       onClick={onClick}
     >
       <div
+        data-aos="slide-up" data-aos-duration="8000"
         className={`relative w-full h-full rounded-xl shadow-lg transition-transform duration-500 [transform-style:preserve-3d] 
         ${isFlipped ? "[transform:rotateY(180deg)]" : ""} group-hover:[transform:rotateY(180deg)]`}
       >

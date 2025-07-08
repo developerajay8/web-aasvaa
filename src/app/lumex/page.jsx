@@ -224,6 +224,7 @@ export default function Page() {
                     <div className="">
                         <h4
                             id="features"
+                            data-aos="slide-up" data-aos-duration="8000"
                             className="sm:text-[48px] font-merriweather text-[28px] text-[#FFFFFF] text-center sm:leading-[52px] leading-[35px] pt-[10px]"
                         >
                             What Makes Lumex Powerful
@@ -235,19 +236,22 @@ export default function Page() {
                         <div className="flex pt-[40px] gap-5">
                             <div>
                                 <img
+                                    data-aos="slide-up" data-aos-duration="8000"
                                     src="/images/Frame 3384642 (1).png"
                                     className=""
                                     alt="Feature 1"
                                 />
                                 <img
+                                    data-aos="slide-up" data-aos-duration="8000"
                                     src="/images/Frame 3384645.png"
                                     alt="Feature 3"
                                     className=" pt-[20px]"
                                 />
                             </div>
                             <div className="">
-                                <img src="/images/Frame 3384644.png" alt="Feature 2" />
+                                <img data-aos="slide-up" data-aos-duration="8000" src="/images/Frame 3384644.png" alt="Feature 2" />
                                 <img
+                                    data-aos="slide-up" data-aos-duration="8000"
                                     src="/images/Frame 3385271.png"
                                     alt="Feature 4"
                                     className="pt-[20px]"
@@ -255,7 +259,7 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="pt-[22px] ">
-                            <img src="/images/Frame 3384688.png" alt="Feature 5" />
+                            <img data-aos="slide-up" data-aos-duration="8000" src="/images/Frame 3384688.png" alt="Feature 5" />
                         </div>
                     </div>
 
@@ -263,26 +267,30 @@ export default function Page() {
                     <div className="sm:hidden block  ">
                         <div className=" gap-5 pt-[40px] ">
                             <img
+                                data-aos="slide-up" data-aos-duration="8000"
                                 src="/images/image 55.png"
                                 className="mx-auto pb-[20px]"
                                 alt=""
                             />
                             <img
+                                data-aos="slide-up" data-aos-duration="8000"
                                 src="/images/image 56.png"
                                 className="mx-auto pb-[20px]"
                                 alt=""
                             />
                             <img
+                                data-aos="slide-up" data-aos-duration="8000"
                                 src="/images/image 57.png"
                                 className="mx-auto pb-[20px]"
                                 alt=""
                             />
                             <img
+                                data-aos="slide-up" data-aos-duration="8000"
                                 src="/images/image 60.png"
                                 className="mx-auto pb-[20px]"
                                 alt=""
                             />
-                            <img src="/images/Frame 3384688 (1).png" className="mx-auto" alt="" />
+                            <img data-aos="slide-up" data-aos-duration="8000" src="/images/Frame 3384688 (1).png" className="mx-auto" alt="" />
                         </div>
                     </div>
                 </div>
@@ -296,7 +304,7 @@ export default function Page() {
 
                     <div className="pt-[55px] xl:px-0 px-[20px]">
                         <h4
-
+                            data-aos="slide-up" data-aos-duration="8000"
                             className="sm:text-[48px] font-merriweather text-[28px] text-[#FFFFFF] text-center sm:leading-[52px] leading-[35px] pb-[20px]"
                         >
                             AI-Enhanced Video Recognition
@@ -304,10 +312,10 @@ export default function Page() {
 
                         <div className="sm:block hidden">
                             <div className="sm:flex max-w-[1084px] mx-auto relative gap-10 pt-[32px]">
-                                <div className="z-10">
+                                <div data-aos="slide-right" data-aos-duration="8000" className="z-10">
                                     <img src="/images/image 45.png" alt="" />
                                 </div>
-                                <div className="pt-[30px]">
+                                <div data-aos="slide-left" data-aos-duration="8000" className="pt-[30px]">
                                     <h4 className="text-[#FFFF00] font-merriweather sm:text-[36px] text-[28px]  py-[10px] ">
                                         Video Feature
                                     </h4>
@@ -325,7 +333,7 @@ export default function Page() {
 
                         <div className="sm:hidden block ">
                             <div className="sm:flex max-w-[1084px] mx-auto relative gap-10 pt-[32px]">
-                                <div className="pt-[20px]">
+                                <div data-aos="slide-up" data-aos-duration="8000" className="pt-[20px]">
                                     <h4 className="text-[#ffffff] font-merriweather font-bold sm:text-[36px] text-[28px]  py-[10px] ">
                                         Video Feature
                                     </h4>
@@ -341,13 +349,13 @@ export default function Page() {
                                         tailored and streamlined experience
                                     </p>
                                 </div>
-                                <div className="z-10 pt-[10px]  ">
+                                <div data-aos="slide-up" data-aos-duration="8000" className="z-10 pt-[10px]  ">
                                     <img src="/images/image 45.png" alt="" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="absolute sm:bottom-0 bottom-[50px]">
+                    <div data-aos="slide-up" data-aos-duration="8000" className="absolute sm:bottom-0 bottom-[50px]">
                         <img src="/images/Frame 1.png" alt="" className="" />
                     </div>
                 </div>
@@ -358,11 +366,12 @@ export default function Page() {
             }} className="bg-cover bg-center w-full xl:px-0 px-[20px]">
                 <div className="max-w-[1088px] mx-auto sm:py-[80px] py-[20px]">
                     <h4
+                    data-aos="slide-up" data-aos-duration="8000"
                         className="sm:text-[48px] font-merriweather text-[28px] text-[#FFFFFF] text-center sm:leading-[52px] leading-[35px] pb-[20px]"
                     >
                         How Lumex Works
                     </h4>
-                    <div className="sm:block hidden">
+                    <div data-aos="slide-up" data-aos-duration="8000" className="sm:block hidden">
                         <div
                             className="flex gap-5  mt-[60px] "
                         >
@@ -526,6 +535,7 @@ export default function Page() {
                 <div className="md:py-[80px] py-[48px] max-w-[1084px] mx-auto xl:px-0 px-[16px]">
                     <div className="pb-[48px]">
                         <h4
+                            data-aos="slide-right" data-aos-duration="8000"
                             className="sm:text-[48px] font-merriweather text-[28px] text-[#FFFFFF] text-center sm:leading-[52px] leading-[35px] pb-[20px]"
                         >
                             Enrich Your Experiences with Lumex
@@ -535,24 +545,24 @@ export default function Page() {
                     <div className="sm:block hidden">
 
                         <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
-                            <img src="/images/Frame 3384670.png" alt="" />
-                            <img src="/images/Frame 3384669.png" alt="" />
-                            <img src="/images/Frame 3384669 (1).png" alt="" />
-                            <img src="/images/Frame 3384670 (1).png" alt="" />
-                            <img src="/images/Frame 3384669 (2).png" alt="" />
-                            <img src="/images/Frame 3384670 (2).png" alt="" />
+                            <img data-aos="slide-up" data-aos-duration="8000" src="/images/Frame 3384670.png" alt="" />
+                            <img data-aos="slide-up" data-aos-duration="8000" src="/images/Frame 3384669.png" alt="" />
+                            <img data-aos="slide-up" data-aos-duration="8000" src="/images/Frame 3384669 (1).png" alt="" />
+                            <img data-aos="slide-up" data-aos-duration="8000" src="/images/Frame 3384670 (1).png" alt="" />
+                            <img data-aos="slide-up" data-aos-duration="8000" src="/images/Frame 3384669 (2).png" alt="" />
+                            <img data-aos="slide-up" data-aos-duration="8000" src="/images/Frame 3384670 (2).png" alt="" />
                         </div>
                     </div>
 
 
                     <div className="sm:hidden block">
                         <div className="flex flex-col items-center justify-center gap-5 w-full">
-                            <img src="/images/Frame 3384670.png" alt="" />
-                            <img src="/images/Frame 3384669.png" alt="" />
-                            <img src="/images/Frame 3384669 (1).png" alt="" />
-                            <img src="/images/Frame 3384670 (1).png" alt="" />
-                            <img src="/images/Frame 3384669 (2).png" alt="" />
-                            <img src="/images/Frame 3384670 (2).png" alt="" />
+                            <img data-aos="slide-up" data-aos-duration="8000" src="/images/Frame 3384670.png" alt="" />
+                            <img data-aos="slide-up" data-aos-duration="8000" src="/images/Frame 3384669.png" alt="" />
+                            <img data-aos="slide-up" data-aos-duration="8000" src="/images/Frame 3384669 (1).png" alt="" />
+                            <img data-aos="slide-up" data-aos-duration="8000" src="/images/Frame 3384670 (1).png" alt="" />
+                            <img data-aos="slide-up" data-aos-duration="8000" src="/images/Frame 3384669 (2).png" alt="" />
+                            <img data-aos="slide-up" data-aos-duration="8000" src="/images/Frame 3384670 (2).png" alt="" />
                         </div>
                     </div>
 
@@ -567,40 +577,17 @@ export default function Page() {
 
 
                     {/* Main Heading */}
-                    <h1 className="text-5xl md:font-bold text-[#ffff00] mb-6 leading-tight">
+                    <h1 data-aos="slide-up" data-aos-duration="8000" className="text-5xl md:font-bold text-[#ffff00] mb-6 leading-tight">
                         Explore the Possibilities of AI, from Moments to Memories
                     </h1>
 
                     {/* Description */}
-                    <p className="text-[#F6F6F6] text-sm max-w-2xl mx-auto mb-8 leading-relaxed px-4">
+                    <p data-aos="slide-up" data-aos-duration="8000" className="text-[#F6F6F6] text-sm max-w-2xl mx-auto mb-8 leading-relaxed px-4">
                         Discover how Lumax can transform your event or business operation with smart media automation.
                         Empower your team and delight your customers with AI that understands moments.
                     </p>
 
-                    {/* CTA Buttons */}
-                    {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-                        <button className="rounded-[10px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black hover:shadow-yellow-glow custom-glow">
-                            Arrange a Discovery Call
-                        </button>
 
-                        <button className="cursor-pointer group text-[#F6F6F6] bg-transparent hover:border-none border-[2px] border-[#F6F6F6] rounded-[10px] transition-all duration-300 hover:bg-[#FFFF00] hover:text-black    py-[15px] px-[22px] text-[16px] font-[600]  relative">
-                            <span className="inline-block transition-all duration-300 group-hover:pr-5">
-                                Get Free Trial Access
-                            </span>
-                            <span className="absolute top-1/2 -translate-y-1/2 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                                <FaArrowRightLong className='text-2xl' />
-                            </span>
-                        </button>
-                    </div> */}
-
-                    {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <button className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-lg transition-colors duration-300 text-sm md:text-base">
-                            Arrange a Discovery Call
-                        </button>
-                        <button className="w-full sm:w-auto bg-transparent border-2 border-gray-600 hover:border-yellow-400 text-white hover:text-yellow-400 font-semibold px-6 py-3 rounded-lg transition-colors duration-300 text-sm md:text-base">
-                            Get Free Trial Access
-                        </button>
-                    </div> */}
 
 
 
