@@ -71,8 +71,8 @@ export default function TeamSection() {
   );
 
   return (
-    <section className="w-full  py-10 sm:py-16 ">
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row gap-6">
+    <section className="w-full   ">
+      <div className="max-w-[1240px] mx-auto flex flex-col sm:flex-row gap-6">
         <Card
           isFlipped={isFlipped1}
           onClick={() => setIsFlipped1(!isFlipped1)}
