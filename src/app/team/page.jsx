@@ -20,9 +20,10 @@ export default function Page() {
   <img src="/images/Frame 169.png" alt="" className="shrink-0" />
   <img src="/images/Frame 170.png" alt="" className="shrink-0" />
   <img src="/images/Frame 171 (1).png" alt="" className="shrink-0" />
+            <img src="/images/Frame 169 (1).png" alt="" className="shrink-0" />
   <img src="/images/Frame 172.png" alt="" className="shrink-0" />
-  <img src="/images/Frame 173.png" alt="" className="shrink-0" />
   <img src="/images/Frame 174.png" alt="" className="shrink-0" />
+  <img src="/images/Frame 173.png" alt="" className="shrink-0" />
 </div>
 
 

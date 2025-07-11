@@ -11,8 +11,8 @@ export default function Ourjourney() {
                 <h1 className='text-[#F6F6F6] md:text-[48px] text-[40px] text-center '>Our Journey</h1>
             </div>
 
-            <img src="/images/Group 207.png" alt="" data-aos="slide-up" data-aos-duration="8000" className='sm:block hidden' />
-            <img src="/images/Group 212.png" alt="" data-aos="slide-up" data-aos-duration="8000" className='sm:hidden block' />
+            <img src="/images/Group 225.png" alt="" data-aos="slide-up" data-aos-duration="8000" className='sm:block hidden' />
+            <img src="/images/Group 226.png" alt="" data-aos="slide-up" data-aos-duration="8000" className='sm:hidden block' />
         </div>
     </div>
   )

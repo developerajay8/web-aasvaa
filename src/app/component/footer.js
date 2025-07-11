@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { FaFacebookF, FaLinkedinIn, FaYoutube, FaTimes, FaPhoneAlt, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Footerlogo from "../../../public/logo.png"
 import Link from "next/link";
@@ -20,10 +21,12 @@ const Footer = () => {
                         building India’s own AI ecosystem through advanced Gen AI, Vision AI, and domain-specific tools. From legal research and business automation to no-code chatbot development, Aasvaa’s products—GoJuris, Lumex, and AasvaaEra—empower individuals, startups, and enterprises to turn data into action, securely and intelligently.
                     </p>
                     <div className="flex gap-2">
-                        <a href="#" className="bg-[#FFFF00] text-black p-2 rounded-sm"><FaFacebookF /></a>
-                        <a href="#" className="bg-[#FFFF00] text-black p-2 rounded-sm"><FaLinkedinIn /></a>
-                        <a href="#" className="bg-[#FFFF00] text-black p-2 rounded-sm"><FaYoutube /></a>
-                        <a href="#" className="bg-[#FFFF00] text-black p-2 rounded-sm"><FaTimes /></a>
+                        <Link href={"https://www.linkedin.com/company/aasvaainnovationlabs/"}>
+                        <img src="/Link - icon (7).png"/>
+                        </Link>
+                         <Link href={"https://www.instagram.com/aasvaainnovlabs/"}>
+                        <img src="/Link - icon (6).png"/>
+                        </Link>
                     </div>
                 </div>
 

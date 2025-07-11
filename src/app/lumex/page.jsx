@@ -28,7 +28,7 @@ const features = [
 ];
 export default function Page() {
     return (
-        <div>
+        <div className='overflow-hidden'>
             <Navbar />
             <section style={{
                 backgroundImage: 'url("/images/Frame 3384776 (2).png")',
