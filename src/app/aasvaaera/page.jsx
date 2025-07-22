@@ -485,7 +485,40 @@ export default function Page() {
             </section>
 
 
+<div style={{
+                backgroundImage: 'url("/Frame 3385313.svg")',
+            }} className="bg-cover bg-center w-full">
+                <div className="max-w-[1240px] mx-auto px-4 xl:px-0 md:py-[80px] py-[48px] ">
+                    <div className="max-w-[854px] mx-auto pb-[48px] ">
+                        <div className="lg:text-[48px] md:text-[40px] text-[32px] text-[white]  text-center">On the Path to Becoming Bharat’s First Domain-Specific LLM</div>
+                        
+                    </div>
 
+                    <div className="sm:block hidden">
+                        <div className="flex flex-col gap-5">
+                            <div className="flex gap-5">
+                                <div className=""><img src="/images/image (47).png" alt="" /></div>
+                                <div className=""><img src="/images/Frame 118 (2).png" alt="" /></div>
+                            </div>
+                            <div className="flex gap-5">
+                                <div className=""><img src="/images/Frame 120 (2).png" alt="" /></div>
+                                <div className=""><img src="/images/Frame 121 (2).png" alt="" /></div>
+                                <div className=""><img src="/images/Frame 122 (1).png" alt="" /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="sm:hidden block w-fit mx-auto">
+                        <div className="flex flex-col gap-5 justify-center">
+                            <div className=""><img src="/images/image.svg" alt="" /></div>
+                            <div className=""><img src="/images/Frame 118.svg" alt="" /></div>
+                            <div className=""><img src="/images/Frame 120.svg" alt="" /></div>
+                            <div className=""><img src="/images/Frame 121.svg" alt="" /></div>
+                            <div className=""><img src="/images/Frame 122.svg" alt="" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <ContactForm />
             <Footer />

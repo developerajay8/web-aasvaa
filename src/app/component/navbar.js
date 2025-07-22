@@ -108,6 +108,20 @@ export default function Navbar() {
                     >
                       Gojuris
                     </Link>
+                    <Link
+                      href="/newproduct"
+                      className="block px-4 py-2  transition-colors"
+                      onClick={handleSubmenuClick}
+                    >
+                      New Product
+                    </Link>
+                    <Link
+                      href="/manthan"
+                      className="block px-4 py-2  transition-colors"
+                      onClick={handleSubmenuClick}
+                    >
+                      Manthan
+                    </Link>
                   </div>
                 )}
               </div>
