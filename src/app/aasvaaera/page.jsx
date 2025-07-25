@@ -7,6 +7,7 @@ import Image from 'next/image'
 import ContactForm from '../component/contact-from'
 import Footer from '../component/footer'
 import { Heading5 } from "lucide-react";
+import Link from "next/link";
 // import { Shield, Book, FileText, Search, Lock } from "lucide-react";
 
 const features = [
@@ -254,6 +255,17 @@ export default function Page() {
                         <div className="absolute top-[-40px] lg:right-[-40px] right-[-0px]">
                             <img src="/Frame 221.png" alt="" />
                         </div>
+                        <Link href="/annant">
+
+                        <button onClick={() => {
+                                const section = document.getElementById("contact");
+                                if (section) {
+                                    section.scrollIntoView({ behavior: "smooth" });
+                                }
+                            }} className="cursor-pointer mt-4 w-full rounded-[10px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 md:hover:bg-[#FFFF00]  hover:text-black hover:shadow-yellow-glow custom-glow">
+                                Explore
+                            </button>
+                            </Link>
                     </div>
 
                     {/* Manthaan Card */}
@@ -296,6 +308,16 @@ export default function Page() {
                         <div className="absolute top-[-40px] lg:right-[-40px] right-[-0px]">
                             <img src="/Frame 3385313 (4).png" alt="" />
                         </div>
+                        <Link href="/manthan">
+                   <button onClick={() => {
+                                const section = document.getElementById("contact");
+                                if (section) {
+                                    section.scrollIntoView({ behavior: "smooth" });
+                                }
+                            }} className="cursor-pointer mt-4 w-full rounded-[10px] text-[16px] font-semibold text-[#FFFF00] bg-gray-500 py-[15px] px-[22px] transition-all duration-300 md:hover:bg-[#FFFF00]  hover:text-black hover:shadow-yellow-glow custom-glow">
+                                Explore
+                            </button>
+                            </Link>
                     </div>
                 </div>
 
@@ -327,7 +349,7 @@ export default function Page() {
                         <div className="tracking-[4px] text-center text-[#ffff00] text-[22px] ">Alone they perform, together they transform industries.</div>
                     </div>
 
-                    
+
                 </div>
             </section>
 
@@ -353,16 +375,16 @@ export default function Page() {
                     <div className="max-w-[1295px] mx-auto overflow-x-auto">
                         <div className="flex gap-4 md:gap-6 w-max">
                             <div className="flex-shrink-0 ">
-                                <img src="/images/Frame 3385312.png" alt="Build Option 1" className="w-full h-auto" />
+                                <img src="/Frame 3385312 (5).png" alt="Build Option 1" className="w-full h-auto" />
                             </div>
                             <div className="flex-shrink-0 ">
-                                <img src="/images/Frame 3385313.png" alt="Build Option 2" className="w-full h-auto" />
+                                <img src="/Frame 3385315 (4).png" alt="Build Option 2" className="w-full h-auto" />
                             </div>
                             <div className="flex-shrink-0 ">
-                                <img src="/images/Frame 3385315.png" alt="Build Option 3" className="w-full h-auto" />
+                                <img src="/Frame 3385315 (5).png" alt="Build Option 3" className="w-full h-auto" />
                             </div>
                             <div className="flex-shrink-0 ">
-                                <img src="/images/Frame 3385314.png" alt="Build Option 4" className="w-full h-auto" />
+                                <img src="/Frame 3385314 (10).png" alt="Build Option 4" className="w-full h-auto" />
                             </div>
                         </div>
                     </div>
@@ -379,7 +401,7 @@ export default function Page() {
                             id="features"
                             className="sm:text-[48px] font-merriweather text-[28px] text-[#FFFFFF] text-center sm:leading-[52px] leading-[35px] pt-[10px]"
                         >
-                            What You Can Build
+                            How AasvaaEra Works
                         </h4>
 
 
@@ -388,26 +410,33 @@ export default function Page() {
                     <div className="overflow-x-auto whitespace-nowrap ">
                         <div className="flex items-center gap-5 w-max">
                             <div className="inline-block">
-                                <img src="/Frame 3385312 (3).png" alt="" className="" />
+                                <img src="/Frame 3385312 (2).svg" alt="" className="" />
                             </div>
                             <div className="inline-block">
                                 <img src="/Frame 3385354.png" alt="" className="" />
                             </div>
                             <div className="inline-block">
-                                <img src="/Frame 3385313 (3).png" alt="" className="" />
+                                <img src="/Frame 3385313 (1).svg" alt="" className="" />
                             </div>
                             <div className="inline-block">
                                 <img src="/Frame 3385354.png" alt="" className="" />
                             </div>
                             <div className="inline-block">
-                                <img src="/Frame 3385314 (4).png" alt="" className="" />
+                                <img src="/Frame 3385314 (5).png" alt="" className="w-[344px] h-[109px]" />
                             </div>
                             <div className="inline-block">
                                 <img src="/Frame 3385354.png" alt="" className="" />
                             </div>
                             <div className="inline-block">
-                                <img src="/Frame 3385312 (3).png" alt="" className="" />
+                                <img src="/Frame 3385315.svg" alt="" className="" />
                             </div>
+                            <div className="inline-block">
+                                <img src="/Frame 3385354.png" alt="" className="" />
+                            </div>
+                            <div className="inline-block">
+                                <img src="/Frame 3385316.svg" alt="" className="" />
+                            </div>
+                            
 
                         </div>
                     </div>
@@ -415,106 +444,39 @@ export default function Page() {
                 </div>
             </section>
 
-            <section style={{
-                backgroundImage: 'url("/Frame 3385312 (4).png")',
-            }} className="bg-cover bg-center w-full text-white px-4 md:px-16 md:py-[80px] py-[48px] relative overflow-hidden">
-                <div className="">
-                    <div className=" pb-[48px] text-center">
-                        <h4
-                            id="features"
-                            className="sm:text-[48px] font-merriweather text-[28px] text-[#FFFFFF] text-center sm:leading-[52px] leading-[35px] pt-[10px]"
-                        >
-                            Why AasvaaEra?
-                        </h4>
 
 
-                    </div>
 
-                    <div className="lg:block hidden">
-                        <div className="max-w-[1295px] mx-auto flex flex-col gap-5">
-                            <div className="flex items-center justify-between">
-                                <div className="">
-                                    <img src="/images/Frame 3385312 (2).png" alt="" />
-                                </div>
-                                <div className="">
-                                    <img src="/images/Frame 3385313 (1).png" alt="" />
-                                </div>
-                                <div className="">
-                                    <img src="/images/Frame 3385314 (3).png" alt="" />
-                                </div>
-                            </div>
-                            <div className="flex items-center justify-between mx-[150px]">
-                                <div className="">
-                                    <img src="/images/Frame 3385312 (1).png" alt="" />
-                                </div>
-                                <div className="">
-                                    <img src="/images/Frame 3385313 (2).png" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="w-full overflow-x-auto lg:hidden block">
-                        <div className="flex gap-4 w-max px-4 pb-4">
-
-                            <div className="flex-shrink-0 ">
-                                <img src="/images/Frame 3385312 (2).png" alt="Image 1" className="w-full h-auto object-contain rounded-lg" />
-                            </div>
-
-                            <div className="flex-shrink-0 ">
-                                <img src="/images/Frame 3385313 (1).png" alt="Image 2" className="w-full h-auto object-contain rounded-lg" />
-                            </div>
-
-                            <div className="flex-shrink-0 ">
-                                <img src="/images/Frame 3385314 (3).png" alt="Image 3" className="w-full h-auto object-contain rounded-lg" />
-                            </div>
-
-                            <div className="flex-shrink-0 ">
-                                <img src="/images/Frame 3385312 (1).png" alt="Image 4" className="w-full h-auto object-contain rounded-lg" />
-                            </div>
-
-                            <div className="flex-shrink-0 ">
-                                <img src="/images/Frame 3385313 (2).png" alt="Image 5" className="w-full h-auto object-contain rounded-lg" />
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-            </section>
-
-
-<div style={{
+            <div style={{
                 backgroundImage: 'url("/Frame 3385313.svg")',
             }} className="bg-cover bg-center w-full">
                 <div className="max-w-[1240px] mx-auto px-4 xl:px-0 md:py-[80px] py-[48px] ">
                     <div className="max-w-[854px] mx-auto pb-[48px] ">
-                        <div className="lg:text-[48px] md:text-[40px] text-[32px] text-[white]  text-center">On the Path to Becoming Bharat’s First Domain-Specific LLM</div>
-                        
+                        <div className="lg:text-[48px] md:text-[40px] text-[32px] text-[white]  text-center">Why AasvaaEra?</div>
+
                     </div>
 
                     <div className="sm:block hidden">
                         <div className="flex flex-col gap-5">
                             <div className="flex gap-5">
-                                <div className=""><img src="/images/image (47).png" alt="" /></div>
-                                <div className=""><img src="/images/Frame 118 (2).png" alt="" /></div>
+                                <div className=""><img src="/image (32).svg" alt="" /></div>
+                                <div className=""><img src="/image (33).svg" alt="" /></div>
                             </div>
                             <div className="flex gap-5">
-                                <div className=""><img src="/images/Frame 120 (2).png" alt="" /></div>
-                                <div className=""><img src="/images/Frame 121 (2).png" alt="" /></div>
-                                <div className=""><img src="/images/Frame 122 (1).png" alt="" /></div>
+                                <div className=""><img src="/image (34).svg" alt="" /></div>
+                                <div className=""><img src="/image (35).svg" alt="" /></div>
+                                <div className=""><img src="/image (36).svg" alt="" /></div>
                             </div>
                         </div>
                     </div>
 
                     <div className="sm:hidden block w-fit mx-auto">
                         <div className="flex flex-col gap-5 justify-center">
-                            <div className=""><img src="/images/image.svg" alt="" /></div>
-                            <div className=""><img src="/images/Frame 118.svg" alt="" /></div>
-                            <div className=""><img src="/images/Frame 120.svg" alt="" /></div>
-                            <div className=""><img src="/images/Frame 121.svg" alt="" /></div>
-                            <div className=""><img src="/images/Frame 122.svg" alt="" /></div>
+                            <div className=""><img src="/image (37).svg" alt="" /></div>
+                            <div className=""><img src="/image (38).svg" alt="" /></div>
+                            <div className=""><img src="/image (39).svg" alt="" /></div>
+                            <div className=""><img src="/image (40).svg" alt="" /></div>
+                            <div className=""><img src="/image (41).svg" alt="" /></div>
                         </div>
                     </div>
                 </div>

@@ -220,28 +220,24 @@ export default function Page() {
 
 
                     <div className="pt-[55px] xl:px-0 px-[20px]">
-                        <h4
-                            data-aos="slide-up" data-aos-duration="8000"
-                            className="sm:text-[48px] font-merriweather text-[28px] text-[#FFFFFF] text-center sm:leading-[52px] leading-[35px] pb-[20px]"
-                        >
-                            AI-Enhanced Video Recognition
-                        </h4>
 
                         <div className="sm:block hidden">
                             <div className="sm:flex max-w-[1084px] mx-auto relative gap-10 pt-[32px]">
                                 
                                 <div data-aos="slide-right" data-aos-duration="8000" className="pt-[30px]">
                                     <h4 className="text-[#FFFF00] font-merriweather sm:text-[36px] text-[28px]  py-[10px] ">
-                                        Video Feature
+                                       Now With Vision <br />
+Powered by Lumex
                                     </h4>
                                     <p className="max-w-[600px] text-[#BCBBC0] sm:text-[18px] text-[14px] leading-[21px] font-[400] ">
-                                        Empowering users with AI-driven face recognition to
-                                        effortlessly scan, identify, and{" "}
-                                        access video clips featuring their faces.{" "}
-                                        Our technology enables precise editing, seamless adjustments,
-                                        and efficient downloading of video segments, ensuring a
-                                        tailored and streamlined experience
+                                      Annant supports visual intelligence for agents requiring facial recognition, image tagging, document verification, or OCR. Powered by Lumex, this makes your bots truly multimodal.
                                     </p>
+                                    <div className="flex gap-5 pt-[20px]">
+                                        <div><img src="/images/AI Button (2).svg" alt="" /></div>
+                                        <div><img src="/images/AI Button (3).svg" alt="" /></div>
+                                        <div><img src="/images/AI Button (4).svg" alt="" /></div>
+                                        <div><img src="/images/AI Button (5).svg" alt="" /></div>
+                                    </div>
                                 </div>
 
                                 <div data-aos="slide-left" data-aos-duration="8000" className="z-10">
@@ -254,19 +250,18 @@ export default function Page() {
                             <div className="sm:flex max-w-[1084px] mx-auto relative gap-10 pt-[32px]">
                                 <div data-aos="slide-up" data-aos-duration="8000" className="pt-[20px]">
                                     <h4 className="text-[#ffffff] font-merriweather font-bold sm:text-[36px] text-[28px]  py-[10px] ">
-                                        Video Feature
+                                        Now With Vision 
+Powered by Lumex
                                     </h4>
                                     <p className="max-w-[439px] text-[#BCBBC0] sm:text-[18px] text-[14px] leading-[21px] font-[400] ">
-                                        Empowering users with AI-driven face recognition to
-                                        effortlessly scan, identify, and{" "}
-                                        <span className="text-[#F3CF00] ">
-                                            {" "}
-                                            access video clips featuring their faces.{" "}
-                                        </span>{" "}
-                                        Our technology enables precise editing, seamless adjustments,
-                                        and efficient downloading of video segments, ensuring a
-                                        tailored and streamlined experience
+                                       Annant supports visual intelligence for agents requiring facial recognition, image tagging, document verification, or OCR. Powered by Lumex, this makes your bots truly multimodal.
                                     </p>
+                                    <div className="flex gap-5  pt-[20px]">
+                                        <div><img src="/images/AI Button (2).svg" alt="" /></div>
+                                        <div><img src="/images/AI Button (3).svg" alt="" /></div>
+                                        <div><img src="/images/AI Button (4).svg" alt="" /></div>
+                                        <div><img src="/images/AI Button (5).svg" alt="" /></div>
+                                    </div>
                                 </div>
                                 <div data-aos="slide-up" data-aos-duration="8000" className="z-10 pt-[10px]  ">
                                     <img src="/images/image 45.png" alt="" />
@@ -274,9 +269,9 @@ export default function Page() {
                             </div>
                         </div>
                     </div>
-                    <div data-aos="slide-up" data-aos-duration="8000" className="absolute sm:bottom-0 bottom-[50px]">
+                    {/* <div data-aos="slide-up" data-aos-duration="8000" className="absolute sm:bottom-0    bottom-[50px]">
                         <img src="/images/Frame 1.png" alt="" className="" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
